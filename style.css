@@ -30,6 +30,12 @@ h1 {
 	font-size: 2.5rem;
 }
 
+h1 img {
+	width: 64px;
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
 #page-header p {
 	margin-bottom: 0;
 	font-size: 1.1rem;
@@ -80,8 +86,93 @@ input {
 	font: inherit;
 }
 
-.expense-list p {
-	margin-bottom: 0;
-	color: #6b6962;
-	font-style: italic;
+.expense-form > form {
+	max-width: 32rem;
+}
+
+select,
+button {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #aaa398;
+	border-radius: 4px;
+	font: inherit;
+}
+
+select {
+	margin-bottom: 0.75rem;
+	background-color: #ffffff;
+}
+
+input:not([type="submit"]):focus,
+select:focus {
+	border-color: #3f6b62;
+	outline: 3px solid rgba(63, 107, 98, 0.2);
+}
+
+button {
+	border-color: #234d45;
+	background-color: #3f6b62;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #234d45;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #fffdf8;
+}
+
+th,
+td {
+	padding: 0.8rem;
+	border: 1px solid #c9c4b8;
+	text-align: left;
+}
+
+th {
+	background-color: #3f6b62;
+	color: #ffffff;
+}
+
+tr:nth-child(even) {
+	background-color: #f4f1ea;
+}
+
+.expense-list td {
+	color: #394540;
+}
+
+tbody tr:hover {
+	background-color: #dce9e5;
+}
+
+details,
+.budget-video {
+	padding: 1.5rem;
+	border: 1px solid #c9c4b8;
+	background-color: #fffdf8;
+}
+
+summary {
+	color: #3f6b62;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+details p {
+	margin: 1rem 0 0;
+}
+
+.budget-video h2 {
+	margin-bottom: 1rem;
+}
+
+iframe {
+	max-width: 100%;
+	border: 0;
 }
